@@ -3,7 +3,8 @@ A honey pot raspberry pi. That has a web server running but the OpenCanary check
 This'll be a full tutorial after booting up your raspberry pi to the end.
 
 
-# This is how you can connect your Macbook to your raspberry pi. This is an optional step in case you want a remote GUI.
+# Remote Setup
+This is how you can connect your Macbook to your raspberry pi. This is an optional step in case you want a remote GUI.
   https://youtu.be/YP3_gvHZhfw
 
 ```linux
@@ -40,3 +41,8 @@ Connect from Mac
 ```linux
 ifconfig
 ```
+
+# openCanary
+
+
+# Web Server
