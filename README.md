@@ -10,7 +10,7 @@ This is how you can connect your Macbook to your raspberry pi. This is an option
 ```linux
 sudo raspi-config
 ```
-Then on RaspberryPi 4 the controls are different so you can follow the video or:
+*Then on RaspberryPi 4 the controls are different so you can follow the video or:
  *Scroll Down to "3 Interface Option"
  *Click Enter
   Scroll Down to "P2 SSH"
