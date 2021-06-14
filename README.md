@@ -10,14 +10,14 @@ This is how you can connect your Macbook to your raspberry pi. This is an option
 ```linux
 sudo raspi-config
 ```
-* Then on RaspberryPi 4 the controls are different so you can follow the video or:
- * Scroll Down to "3 Interface Option"
- * Click Enter
-  Scroll Down to "P2 SSH"
-  Click Enter and Click YES to Enable
-  Get to Interface Option
-  Scroll Down to "P3 VNC"
-  Click Enter and Click YES to Enable
+Then on RaspberryPi 4 the controls are different so you can follow the video or:
+* Scroll Down to "3 Interface Option"
+* Click Enter
+* Scroll Down to "P2 SSH"
+* Click Enter and Click YES to Enable
+* Get to Interface Option
+* Scroll Down to "P3 VNC"
+* Click Enter and Click YES to Enable
 
 And reboot
 
@@ -26,23 +26,33 @@ reboot
 ```
 
 Then Setup the VNC Server (If you do not switch to VNC PAssword it will not work AND make sure to be on the same network as the Pi)
-  Right click on the menu
-  Click options
-  Close the Pop-up
-  Switch Encryption tp prefer off
-  Ensure Authentication uses VNC password
-  Go to Users & Permissions
-  Double Click the Standard user
-  Set the password
+* Right click on the menu
+* Click options
+* Close the Pop-up
+* Switch Encryption tp prefer off
+* Ensure Authentication uses VNC password
+* Go to Users & Permissions
+* Double Click the Standard user
+* Set the password
 
 Connect from Mac
-  Open Screen Sharing
-  Type the IP Address of your RapsberryPi which can be found using
+* Open Screen Sharing
+* Type the IP Address of your RapsberryPi which can be found using
 ```linux
 ifconfig
 ```
 
-# openCanary
+# Brave Browser
+```
+sudo apt install apt-transport-https curl
 
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 
-# Web Server
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+sudo apt update
+
+sudo apt install brave-browser
+```
+
+# 
